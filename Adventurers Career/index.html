@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Adventurer's Career</title>
+  <link rel="stylesheet" href="/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Adventurer's life</h1>
+    </header>
+    <main>
+        <section id = "background">
+            <section id="backgroundImage" class ="gridMobContainer">
+                <img src="./sprites/Goblin.png" alt="A goblin" id = "monster1">
+                <img src="./sprites/Goblin.png" alt="A goblin" id = "monster2">            
+            </section>
+        </section>
+        <section class="grid-container">
+            <article class="log"><p id = "log">Welcome</p></article>
+            <article class="mob">
+            <ul class="mob">
+                <li id = "mob-Name"></h3>
+                <li>Level: <span id = "mob_level"></span></li>
+                <li>HP: <span id = "mob_hp"></span></li>
+                <li>Attack: <span id = "mob_att"></span></li>
+                <li>Defense: <span id = "mob_def"></span></li> 
+            </ul>                  
+            </article> 
+            <article class="action">
+                <ul>   
+                    <li class = "btn adventure" id="adventureBtn">Adventure</li>
+                    <li class = "btn rest" id = "rest">Rest</li>
+                    <li class = "btn combat" id = "attackBtn">Attack</li>
+                    <li class = "btn combat" id = "defendBtn">Defend</li>
+                    <li class = "btn combat" id = "runBtn">Run</li>
+                    <li class = "btn reset" id = "resetBtn">Reset</li>
+                </ul>
+            </article>  
+            <ul class="kar">
+                <li>Adventurer</li>
+                <li>Level: <span><span id = "char_level"></span></span></li>
+                <li>XP:  <span><span id = "char_xp"></span></span></li>
+                <li>Atribute Points  <span><span id = "char_points"></span></span></li>
+                <li>HP: <abbr><span class = "atri_btn" id="hpUP">+</span><span class="end" id = "char_hp"></span></abbr></li>
+                <li>Attack: <abbr><span class="atri_btn" id="attUp">+</span><span class="end" id = "char_att"></span></abbr></li>
+                <li>Defense: <abbr><span class="atri_btn" id="defUp">+</span><span class="end" id = "char_def"></span></abbr></li>
+                <li id = "char_defpower">Defendpower: <span id = "char_defpower_value"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Version Alpha 1</p>
+    </footer>
+    <script src="/js/CharacterCreator.js"></script>
+    <script src="./js/button_assign.js"></script>
+    <script src="./js/Events.js"></script>
+    <script src="./js/button_functions.js"></script>
+    <script src="./js/MonsterCreator.js"></script>
+    <script src="./js/Css update.js"></script>
+    <script src="./js/Main.js"></script>
+</body>
+
+</html>
